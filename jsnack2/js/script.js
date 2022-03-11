@@ -3,21 +3,25 @@
 
 
 
-const numbers = [];
+let number;
 let somma = 0;
 
-/* VERSIONE FOR
+// VERSIONE FOR
+
+
 
 for(let i=0; i < 5; i++){
-    numbers.push(parseInt(prompt('Inserisci un numero')))
-    somma += numbers[i];
+    number = (parseInt(prompt('Inserisci un numero')));
+    while(isNaN(number)){
+        number = (parseInt(prompt('Inserisci un numero')));
+    }
+    somma += number;
 }
 
-console.log(numbers)
 console.log(somma)
-*/
 
-// VERSIONE WHILE
+
+/* VERSIONE WHILE
 
 
 while(numbers.length < 5){
@@ -31,4 +35,4 @@ for(let i=0; i < numbers.length; i++){
 console.log(numbers)
 console.log(somma)
 
-
+*/
